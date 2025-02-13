@@ -10,7 +10,7 @@ pygame.mixer.init()  # Initialize the mixer for sound
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Enhanced Shooter")
+pygame.display.set_caption("ShooTar: The Game")
 
 # Colors
 WHITE = (255, 255, 255)
