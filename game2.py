@@ -21,23 +21,23 @@ YELLOW = (255, 255, 0)
 BLUE = (0, 0, 255)
 
 # Load Assets
-player_img = pygame.image.load("player.png").convert_alpha()  # Replace with your image
+player_img = pygame.image.load("player.png").convert_alpha() 
 player_img = pygame.transform.scale(player_img, (50, 40))  # Scale it
 
-bullet_img = pygame.image.load("bullet.png").convert_alpha() # Replace with your image
+bullet_img = pygame.image.load("bullet.png").convert_alpha() 
 bullet_img = pygame.transform.scale(bullet_img, (5, 10))
 
-enemy_img = pygame.image.load("enemy.png").convert_alpha() # Replace with your image
+enemy_img = pygame.image.load("enemy.png").convert_alpha() 
 enemy_img = pygame.transform.scale(enemy_img, (30, 30))
 
-powerup_img = pygame.image.load("powerup.png").convert_alpha() # Replace with your image
+powerup_img = pygame.image.load("powerup.png").convert_alpha() 
 powerup_img = pygame.transform.scale(powerup_img, (20, 20))
 
 
-shoot_sound = pygame.mixer.Sound("shoot.wav") # Replace with your sound file
-explosion_sound = pygame.mixer.Sound("explosion.wav") # Replace with your sound file
-powerup_sound = pygame.mixer.Sound("powerup.wav") # Replace with your sound file
-pygame.mixer.music.load("background.wav") # Replace with your background music
+shoot_sound = pygame.mixer.Sound("shoot.wav") 
+explosion_sound = pygame.mixer.Sound("explosion.wav") 
+powerup_sound = pygame.mixer.Sound("powerup.wav") 
+pygame.mixer.music.load("background.wav") 
 pygame.mixer.music.set_volume(0.5) # Adjust the volume as needed
 pygame.mixer.music.play(-1)  # Play indefinitely
 
@@ -45,8 +45,7 @@ pygame.mixer.music.play(-1)  # Play indefinitely
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = player_img #pygame.Surface([50, 40])  # Placeholder
-        #self.image.fill(GREEN)  # Green rectangle
+        self.image = player_img 
         self.rect = self.image.get_rect()
         self.rect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT - 50)
         self.speed_x = 0
@@ -96,8 +95,7 @@ class Player(pygame.sprite.Sprite):
 class Bullet(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
-        self.image = bullet_img #pygame.Surface([5, 10])
-        #self.image.fill(WHITE)
+        self.image = bullet_img
         self.rect = self.image.get_rect()
         self.rect.centerx = x
         self.rect.bottom = y
