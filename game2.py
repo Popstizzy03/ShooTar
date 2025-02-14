@@ -10,7 +10,11 @@ pygame.mixer.init()
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+<<<<<<< HEAD
 pygame.display.set_caption("Advanced Shooter")
+=======
+pygame.display.set_caption("ShooTar: The Game")
+>>>>>>> origin/master
 
 # Colors
 WHITE = (255, 255, 255)
@@ -22,6 +26,7 @@ BLUE = (0, 0, 255)
 GREY = (128, 128, 128)
 
 # Load Assets
+<<<<<<< HEAD
 player_img = pygame.image.load("player.png").convert_alpha()
 player_img = pygame.transform.scale(player_img, (50, 40))
 
@@ -32,11 +37,24 @@ enemy_img = pygame.image.load("enemy.png").convert_alpha()
 enemy_img = pygame.transform.scale(enemy_img, (30, 30))
 
 powerup_img = pygame.image.load("powerup.png").convert_alpha()
+=======
+player_img = pygame.image.load("player.png").convert_alpha() 
+player_img = pygame.transform.scale(player_img, (50, 40))  # Scale it
+
+bullet_img = pygame.image.load("bullet.png").convert_alpha() 
+bullet_img = pygame.transform.scale(bullet_img, (5, 10))
+
+enemy_img = pygame.image.load("enemy.png").convert_alpha() 
+enemy_img = pygame.transform.scale(enemy_img, (30, 30))
+
+powerup_img = pygame.image.load("powerup.png").convert_alpha() 
+>>>>>>> origin/master
 powerup_img = pygame.transform.scale(powerup_img, (20, 20))
 
 background_img = pygame.image.load("background.png").convert()  # Static background
 background_img = pygame.transform.scale(background_img, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
+<<<<<<< HEAD
 
 shoot_sound = pygame.mixer.Sound("shoot.wav")
 explosion_sound = pygame.mixer.Sound("explosion.wav")
@@ -44,12 +62,24 @@ powerup_sound = pygame.mixer.Sound("powerup.wav")
 pygame.mixer.music.load("background.wav")
 pygame.mixer.music.set_volume(0.5)
 pygame.mixer.music.play(-1)
+=======
+shoot_sound = pygame.mixer.Sound("shoot.wav") 
+explosion_sound = pygame.mixer.Sound("explosion.wav") 
+powerup_sound = pygame.mixer.Sound("powerup.wav") 
+pygame.mixer.music.load("background.wav") 
+pygame.mixer.music.set_volume(0.5) # Adjust the volume as needed
+pygame.mixer.music.play(-1)  # Play indefinitely
+>>>>>>> origin/master
 
 # Player Class
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
+<<<<<<< HEAD
         self.image = player_img
+=======
+        self.image = player_img 
+>>>>>>> origin/master
         self.rect = self.image.get_rect()
         self.rect.center = (SCREEN_WIDTH // 2, SCREEN_HEIGHT - 50)
         self.speed_x = 0
