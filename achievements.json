@@ -1,0 +1,77 @@
+{
+  "first_kill": {
+    "unlocked": true,
+    "name": "First Blood",
+    "description": "Kill your first enemy"
+  },
+  "first_boss": {
+    "unlocked": true,
+    "name": "Boss Hunter",
+    "description": "Defeat your first boss"
+  },
+  "level_5": {
+    "unlocked": false,
+    "name": "Veteran",
+    "description": "Reach level 5"
+  },
+  "level_10": {
+    "unlocked": false,
+    "name": "Expert",
+    "description": "Reach level 10"
+  },
+  "score_10k": {
+    "unlocked": false,
+    "name": "Score Master",
+    "description": "Reach 10,000 points"
+  },
+  "score_50k": {
+    "unlocked": false,
+    "name": "High Scorer",
+    "description": "Reach 50,000 points"
+  },
+  "score_100k": {
+    "unlocked": false,
+    "name": "Legend",
+    "description": "Reach 100,000 points"
+  },
+  "perfect_level": {
+    "unlocked": false,
+    "name": "Flawless",
+    "description": "Complete a level without taking damage"
+  },
+  "collect_100_powerups": {
+    "unlocked": false,
+    "name": "Collector",
+    "description": "Collect 100 power-ups"
+  },
+  "survive_5_minutes": {
+    "unlocked": false,
+    "name": "Survivor",
+    "description": "Survive for 5 minutes"
+  },
+  "kill_1000_enemies": {
+    "unlocked": false,
+    "name": "Exterminator",
+    "description": "Kill 1,000 enemies"
+  },
+  "defeat_10_bosses": {
+    "unlocked": true,
+    "name": "Boss Slayer",
+    "description": "Defeat 10 bosses"
+  },
+  "no_continues": {
+    "unlocked": false,
+    "name": "Iron Will",
+    "description": "Complete 5 levels without using continues"
+  },
+  "speed_demon": {
+    "unlocked": false,
+    "name": "Speed Demon",
+    "description": "Complete a level in under 1 minute"
+  },
+  "sharpshooter": {
+    "unlocked": false,
+    "name": "Sharpshooter",
+    "description": "Achieve 90% accuracy in a level"
+  }
+}

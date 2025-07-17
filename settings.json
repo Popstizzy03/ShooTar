@@ -1,0 +1,20 @@
+{
+  "music_volume": 0.5,
+  "sfx_volume": 0.7,
+  "music_enabled": true,
+  "sfx_enabled": true,
+  "fullscreen": false,
+  "show_fps": false,
+  "difficulty": "normal",
+  "controls": {
+    "move_left": 1073741904,
+    "move_right": 1073741903,
+    "move_up": 1073741906,
+    "move_down": 1073741905,
+    "shoot": 32,
+    "pause": 112,
+    "quit": 27,
+    "menu": 109,
+    "restart": 114
+  }
+}

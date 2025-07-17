@@ -1,0 +1,182 @@
+[2025-07-17 20:33:51] Error in main game loop: 'float' object has no attribute 'x'
+[2025-07-17 20:33:52] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 258, in run
+    self.game_engine = GameEngine()
+                       ^^^^^^^^^^^^
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 45, in __init__
+    asset_manager.load_all_assets()
+  File "/home/rabboni_kabongo/ShooTar/asset_manager.py", line 21, in load_all_assets
+    self.create_procedural_assets()
+  File "/home/rabboni_kabongo/ShooTar/asset_manager.py", line 178, in create_procedural_assets
+    self.create_background_variations()
+  File "/home/rabboni_kabongo/ShooTar/asset_manager.py", line 200, in create_background_variations
+    star_x = int(x.x * (SCREEN_WIDTH / 100))
+                 ^^^
+AttributeError: 'float' object has no attribute 'x'
+
+[2025-07-17 20:37:55] Error in main game loop: name 'calculate_level_multiplier' is not defined
+[2025-07-17 20:37:55] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 55, in run
+    self.handle_events()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 77, in handle_events
+    self.handle_menu_selection(selection)
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 109, in handle_menu_selection
+    self.start_new_game()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 133, in start_new_game
+    self.level_manager.start_level(1)
+  File "/home/rabboni_kabongo/ShooTar/level_manager.py", line 52, in start_level
+    self.difficulty_multiplier = calculate_level_multiplier(level_number)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_level_multiplier' is not defined
+
+[2025-07-17 20:39:17] Error in main game loop: name 'calculate_level_multiplier' is not defined
+[2025-07-17 20:39:17] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 55, in run
+    self.handle_events()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 77, in handle_events
+    self.handle_menu_selection(selection)
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 109, in handle_menu_selection
+    self.start_new_game()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 133, in start_new_game
+    self.level_manager.start_level(1)
+  File "/home/rabboni_kabongo/ShooTar/level_manager.py", line 52, in start_level
+    self.difficulty_multiplier = calculate_level_multiplier(level_number)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_level_multiplier' is not defined
+
+[2025-07-17 20:39:21] Error in main game loop: name 'calculate_level_multiplier' is not defined
+[2025-07-17 20:39:21] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 55, in run
+    self.handle_events()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 77, in handle_events
+    self.handle_menu_selection(selection)
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 109, in handle_menu_selection
+    self.start_new_game()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 133, in start_new_game
+    self.level_manager.start_level(1)
+  File "/home/rabboni_kabongo/ShooTar/level_manager.py", line 52, in start_level
+    self.difficulty_multiplier = calculate_level_multiplier(level_number)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_level_multiplier' is not defined
+
+[2025-07-17 20:39:38] Error in main game loop: name 'calculate_level_multiplier' is not defined
+[2025-07-17 20:39:38] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 55, in run
+    self.handle_events()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 77, in handle_events
+    self.handle_menu_selection(selection)
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 109, in handle_menu_selection
+    self.start_new_game()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 133, in start_new_game
+    self.level_manager.start_level(1)
+  File "/home/rabboni_kabongo/ShooTar/level_manager.py", line 52, in start_level
+    self.difficulty_multiplier = calculate_level_multiplier(level_number)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_level_multiplier' is not defined
+
+[2025-07-17 20:40:42] Error in main game loop: name 'calculate_spawn_rate' is not defined
+[2025-07-17 20:40:42] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 56, in run
+    self.update()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 182, in update
+    self.update_gameplay()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 198, in update_gameplay
+    self.level_manager.update(self.player)
+  File "/home/rabboni_kabongo/ShooTar/level_manager.py", line 94, in update
+    self.update_enemy_spawning(player)
+  File "/home/rabboni_kabongo/ShooTar/level_manager.py", line 105, in update_enemy_spawning
+    base_spawn_rate = calculate_spawn_rate(ENEMY_SPAWN_RATE, self.current_level)
+                      ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'calculate_spawn_rate' is not defined
+
+[2025-07-17 20:41:28] Error in main game loop: EnemyBullet.__init__() got multiple values for argument 'speed'
+[2025-07-17 20:41:28] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 56, in run
+    self.update()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 182, in update
+    self.update_gameplay()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 201, in update_gameplay
+    sprite_groups.update_all()
+  File "/home/rabboni_kabongo/ShooTar/sprite_groups.py", line 61, in update_all
+    self.all_sprites.update()
+  File "/usr/lib/python3/dist-packages/pygame/sprite.py", line 539, in update
+    sprite.update(*args, **kwargs)
+  File "/home/rabboni_kabongo/ShooTar/enemies.py", line 90, in update
+    self.update_shooting()
+  File "/home/rabboni_kabongo/ShooTar/enemies.py", line 172, in update_shooting
+    bullets = self.shoot()
+              ^^^^^^^^^^^^
+  File "/home/rabboni_kabongo/ShooTar/enemies.py", line 188, in shoot
+    bullet = EnemyBullet(
+             ^^^^^^^^^^^^
+TypeError: EnemyBullet.__init__() got multiple values for argument 'speed'
+
+[2025-07-17 20:45:33] Error in main game loop: HitEffect.__init__() got an unexpected keyword argument 'size'
+[2025-07-17 20:45:33] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 56, in run
+    self.update()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 182, in update
+    self.update_gameplay()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 238, in update_gameplay
+    collision_results = self.collision_manager.check_all_collisions(self.player)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rabboni_kabongo/ShooTar/collision_manager.py", line 56, in check_all_collisions
+    boss_hits = self.check_player_bullets_vs_bosses()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rabboni_kabongo/ShooTar/collision_manager.py", line 182, in check_player_bullets_vs_bosses
+    hit_effect = HitEffect(
+                 ^^^^^^^^^^
+TypeError: HitEffect.__init__() got an unexpected keyword argument 'size'
+
+[2025-07-17 20:45:56] Error in main game loop: HitEffect.__init__() got an unexpected keyword argument 'size'
+[2025-07-17 20:45:56] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 56, in run
+    self.update()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 182, in update
+    self.update_gameplay()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 238, in update_gameplay
+    collision_results = self.collision_manager.check_all_collisions(self.player)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rabboni_kabongo/ShooTar/collision_manager.py", line 56, in check_all_collisions
+    boss_hits = self.check_player_bullets_vs_bosses()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rabboni_kabongo/ShooTar/collision_manager.py", line 182, in check_player_bullets_vs_bosses
+    hit_effect = HitEffect(
+                 ^^^^^^^^^^
+TypeError: HitEffect.__init__() got an unexpected keyword argument 'size'
+
+[2025-07-17 20:48:16] Error in main game loop: module 'pygame.math' has no attribute 'sin'
+[2025-07-17 20:48:16] Traceback (most recent call last):
+  File "/home/rabboni_kabongo/ShooTar/game5.py", line 262, in run
+    self.game_engine.run()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 56, in run
+    self.update()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 182, in update
+    self.update_gameplay()
+  File "/home/rabboni_kabongo/ShooTar/game_engine.py", line 201, in update_gameplay
+    sprite_groups.update_all()
+  File "/home/rabboni_kabongo/ShooTar/sprite_groups.py", line 61, in update_all
+    self.all_sprites.update()
+  File "/usr/lib/python3/dist-packages/pygame/sprite.py", line 539, in update
+    sprite.update(*args, **kwargs)
+  File "/home/rabboni_kabongo/ShooTar/powerups.py", line 48, in update
+    bob_y = pygame.math.sin(self.bob_offset) * 2
+            ^^^^^^^^^^^^^^^
+AttributeError: module 'pygame.math' has no attribute 'sin'
+
