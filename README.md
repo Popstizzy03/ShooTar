@@ -25,7 +25,7 @@ pip install pygame
 To start the game, navigate to the project directory in your terminal and run the following command:
 
 ```bash
-python game2.py
+python game5.py
 ```
 
 ## File Structure
