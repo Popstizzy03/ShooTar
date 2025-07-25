@@ -20,17 +20,17 @@
     "description": "Reach level 10"
   },
   "score_10k": {
-    "unlocked": false,
+    "unlocked": true,
     "name": "Score Master",
     "description": "Reach 10,000 points"
   },
   "score_50k": {
-    "unlocked": false,
+    "unlocked": true,
     "name": "High Scorer",
     "description": "Reach 50,000 points"
   },
   "score_100k": {
-    "unlocked": false,
+    "unlocked": true,
     "name": "Legend",
     "description": "Reach 100,000 points"
   },
